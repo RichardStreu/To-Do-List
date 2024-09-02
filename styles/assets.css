@@ -1,0 +1,98 @@
+/* hier kleine elemente wie buttons komponenten etc standardmäßg stylen */
+
+.note-content {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: inset 3px 3px 6px rgb(255, 253, 255);
+}
+
+.note-box {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.15s ease-in-out;
+}
+
+.input-area {
+  width: 70%;
+  padding: 0;
+  cursor: none;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+#titelTag {
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+
+#inputTag {
+  border-radius: 0;
+  margin: 0;
+  width: 100%;
+  outline: none;
+  padding: 1.25rem 1rem;
+}
+
+.inputField {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  flex: 1;
+}
+
+.divider {
+  height: 2px;
+  background-color: rgb(255, 229, 251);
+  width: 100%;
+}
+
+.note-divider {
+  height: 2px;
+  background-color: rgb(255, 229, 251);
+  width: 100%;
+}
+
+.button {
+  background-color: rgb(255, 211, 255);
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.button:hover {
+  background-color: rgb(255, 180, 255);
+  transform: scale(1.02);
+}
+
+.noteSpan {
+  transition: all 0.15s ease-in-out;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+
+
+.note-box:hover .noteSpan {
+  font-weight: 700;
+  transform: rotate(-135deg) scale(1.5);
+  color: rgb(133, 0, 133)
+}
+
+.regularNoteTrashBox {
+  padding: 8px;
+}
+
+.noteTrashHeadline {
+  padding-left: 8px;
+}
+
+.noteTrashBody {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.5rem;
+}

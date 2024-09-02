@@ -1,0 +1,134 @@
+@media screen and (max-width: 900px) {
+  .main-navbar {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .input-area {
+    margin-right: 2rem;
+    flex: 1;
+  }
+
+  .header-text {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-text h1 {
+    margin-bottom: 0.5rem;
+    padding: 0;
+  }
+  .header-placeholder {
+    width: 0;
+    padding: 0;
+  }
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trash-can-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .trash-can-box {
+    padding: 0.5rem;
+  }
+  .trash-can-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  #reuseTrashNoteButton {
+    margin: 0.5rem;
+  }
+  #deleteTrashButton {
+    margin: 0.5rem;
+  }
+  #clearTrashCanButton {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .upper-wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  main {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .header {
+    height: 7rem;
+  }
+  .strawberry-logo {
+    height: 7rem;
+  }
+  .header-placeholder {
+    height: 7rem;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+  .main-navbar {
+    flex-direction: row;
+  }
+  .input-area {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 530px) {
+  .header {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+  .upper-wrapper {
+    height: 290px;
+  }
+  #content {
+    margin-top: 306px;
+  }
+  .strawberry-logo {
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+  }
+  .header-text h1 {
+    font-size: 1.25rem;
+  }
+  .header-text p {
+    font-size: 0.9rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .header-text h1 {
+    font-size: 1.15rem;
+  }
+  .header-text p {
+    font-size: 0.95rem;
+  }
+}

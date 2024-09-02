@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/img/icons8-strawberry-100.png">
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/assets.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/mediaQuery.css"/>
+    <title>Strawberry's To Do</title>
+  </head>
+  <body>
+    <!-- trash container -->
+    <div class="d-none opacity-zero trash-can-container" id="trashCanContainer">
+      <div class="trash-can-box">
+        <img
+          class="strawberry-logo-trash"
+          src="./assets/img/strawberry-to-do-logo.jpg"
+          alt=""
+        />
+        <button id="trashCanCloseButton" class="trash-can-close-button">
+          <span class="noteSpan">+</span>
+        </button>
+        <div class="trash-can-navbar flex-centered gap-oneRem">
+          <button
+            id="reuseTrashNoteButton"
+            class="button note-box note-content"
+          >
+            Back to Icecream
+          </button>
+          <button id="deleteTrashButton" class="button note-box note-content">
+            Put on Compost
+          </button>
+          <button id="clearTrashCanButton" class="button note-box note-content">
+            All to Mother Nature
+          </button>
+        </div>
+        <div id="trashCanContent" class="trash-can-content"></div>
+      </div>
+    </div>
+    <main>
+      <!-- upper wrapper section -->
+      <div class="upper-wrapper">
+        <header class="header">
+          <img
+            class="strawberry-logo"
+            src="./assets/img/strawberry-to-do-logo.jpg"
+            alt=""
+          />
+          <div class="header-text">
+            <h1>Strawberry To-Do's</h1>
+            <p>
+              Tasks are need like ice cream sweet<br />
+              with Strawberry To-Dos you can't be beat!
+              
+            </p>
+          </div>
+          <div class="header-placeholder"></div>
+        </header>
+
+        <div
+          class="input-container flex-centered space-between width-onehundred header-wrapper"
+        >
+          <div class="input-area flex-column note-box">
+            <input
+              id="titelTag"
+              type="text"
+              class="note-content"
+              placeholder="give it a title (optional)"
+            />
+            <div class="divider"></div>
+            <input
+              id="inputTag"
+              type="text"
+              placeholder="... what's to do?"
+              class="text-area note-content inputField"
+            />
+          </div>
+          <div class="main-navbar flex-row gap-oneRem">
+            <button id="inputNoteButton" class="button note-box note-content">
+              Add as Topping
+            </button>
+            <button
+              id="trashCanOpenButton"
+              class="button note-box note-content"
+            >
+              Show Old Berrys
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- note content div -->
+      <div id="content"></div>
+    </main>
+  </body>
+  <script src="./scripts/templates.js"></script>
+  <script src="script.js"></script>
+</html>
