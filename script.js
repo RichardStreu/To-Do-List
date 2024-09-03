@@ -36,8 +36,6 @@ function renderNotes(arrayNote, arrayTitle) {
   }
 }
 
-
-
 // notizen hinzufügen
 
 function addNewInput() {
@@ -69,7 +67,7 @@ document
   .getElementById("inputNoteButton")
   .addEventListener("click", addNewInput);
 
-// notizen löschen
+// delete notes
 
 function deleteNote(index) {
   let deletedNote = notes.splice(index, 1)[0];
@@ -143,8 +141,6 @@ function renderTrashNotes(arrayTrash, arrayTrashTitle) {
   }
 }
 
-
-
 // close trash can div
 
 const trashCanCloseButtonRef = document.getElementById("trashCanCloseButton");
@@ -161,12 +157,11 @@ function closeTrashContainer() {
 
 function markTrashNote(element) {
   element.classList.toggle("marked-trash-note");
-  const trashNoteDiv = element.querySelectorAll('div div')[2];
-  
+  const trashNoteDiv = element.querySelectorAll("div div")[2];
+
   if (trashNoteDiv) {
-    trashNoteDiv.classList.toggle('marked');
+    trashNoteDiv.classList.toggle("marked");
   }
-  
 }
 
 // clear trash can completly
